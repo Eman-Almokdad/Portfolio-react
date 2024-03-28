@@ -1,0 +1,62 @@
+.inner{
+    padding: 20px;
+    margin-top: 3rem;
+
+}
+.inner .header h2{
+    margin-bottom: 4rem;
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+.inner .header h2 span{
+    color: var(--main-color);
+}
+.inner .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.inner .skillBox{
+    box-shadow: 0 0 0.5rem gray;
+    width: 120px;
+    padding: 10px;
+}
+.inner .skillBox:hover{
+    box-shadow: 0 0 0.5rem var(--main-color);
+}
+.inner .skillTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.inner .skillBox .img {
+width: 80%;
+height: 50%;
+}
+.inner .skillBox .img svg{
+width: 100% !important;
+height: 100%;
+}
+.inner .skillBox .skillTitle h3{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+@media screen and (max-width:992px) {
+    .inner .container{
+
+        justify-content: center;
+    }
+
+/*     .inner .skillBox{
+        width: 50%;
+        height: 120px;
+    } */
+/*     .inner .skillBox .img svg{
+        width: 100 !important;
+        height: 100px;
+        } */
+}

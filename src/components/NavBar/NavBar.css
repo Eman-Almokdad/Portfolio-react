@@ -1,0 +1,141 @@
+nav{
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    backdrop-filter: blur(12px) !important;
+    background-color: transparent !important;
+    
+}
+.nav{
+    width: 100%;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    padding: 0;
+    width: 200px;
+    cursor: pointer;
+}
+nav .ul-nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    cursor: pointer;
+}
+nav a {
+    color: var(--main-color);
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+nav.active{
+border-bottom:3px solid var(--main-color) ;
+}
+
+nav .right{
+    width: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .right img{
+    cursor:pointer;
+}
+nav .right p {
+    font-size: 1rem;
+    font-weight: 400;
+
+    padding-bottom: 2px;
+}
+
+nav .menu-icon{
+    display: none;
+    background-color:transparent;
+    border: none;
+
+}
+#sidbar{
+    width: 246px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 36px;
+    right: 0;
+    padding-top: 10px;
+
+}
+#sidbar .esc {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.menuicon{
+    background-color: var(--main-color) !important;
+}
+#sidbar ul {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#sidbar li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+    list-style: none;
+}
+#sidbar a , .sid-buttom p {
+    font-size: 17px;
+    font-weight: 400;
+    width: 90%;
+}
+.sid-buttom{
+    margin: 0 auto;
+    padding-top: 50px;
+    border-top: 2px solid var(--main-color);
+    width: 70%;
+    height: 25px;
+    position: relative;
+    top:410px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width:992px) {
+    nav{
+        
+        padding: 2.312rem 20px;
+    }
+    nav .menu-icon{
+        display: block;
+    }
+    nav .ul-nav  {
+        display: none;
+    }
+    nav .right{
+        justify-content: end;
+    }
+/*     nav .right p {
+        display: none;
+    } */
+    nav .right {
+        display: none;
+    }
+}

@@ -1,0 +1,44 @@
+
+
+.Certificates{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+.Certificates .header{
+    margin-top: 4rem;
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+.Certificates .header span{
+    color: var(--main-color);
+}
+.Certificates .box{
+    padding: 20px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.Certificates .box p{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.Certificates .box h3{
+font-size: 2rem;
+letter-spacing: .5;
+
+}
+@media screen and (max-width:992px) {
+    .Certificates .box{
+        align-items: center;
+        
+    }
+}

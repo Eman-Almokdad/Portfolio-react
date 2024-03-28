@@ -1,0 +1,28 @@
+
+:root{
+  --bg-color:#191f36;
+  --snd-bg-color:#262B40;
+  --text-color:#fff;
+  --main-color:#59B2F4;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.dark{
+  background-color: var(--bg-color);
+  color: var(--text-color) ;
+  
+
+}
+.light{
+  background-color: var(--text-color);
+  color: var(--bg-color) ;
+}
+@media screen and (max-width:992px) {
+  html {
+      font-size: 10px;
+  }
+}
