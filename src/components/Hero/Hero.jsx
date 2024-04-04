@@ -1,7 +1,7 @@
 
 import './Hero.css'
 import Heroimg from './../../assets/images/Hero.svg'
-
+import cv from './../../../public/Eman-CV.pdf'
 const Hero = () => {
 
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
             <a href="#" >  <i className="fa-brands fa-facebook"></i> </a>
             <a href="#" > <i className="fa-brands fa-github"></i>  </a>
         </div>
-        <a href="#" className='btn'>Download CV</a>
+        <a href="Eman-CV.pdf" download={cv} className='btn'>Download CV</a>
     </div>
     <div className='imgContainer'>
     <img src={Heroimg} alt="" />
